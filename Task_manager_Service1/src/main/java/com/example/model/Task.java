@@ -12,6 +12,7 @@ import java.util.Date;
 
 @Data
 @Entity
+@Table(name = "task")
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,10 +31,7 @@ public class Task {
     @NotNull(message="Must not be Null ")
     private String taskEDate;
 
-
     @Column(name = "priority")
     @NotNull(message="Must not be Null ")
     private int priority;
-
-
 }

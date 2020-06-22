@@ -25,7 +25,7 @@ public class TaskDAOImpl implements TaskDAO {
     @Override
     @Transactional
     public List<Task> getTasks() {
-        Query query = entityManager.createQuery(" from Tasks");
+        Query query = entityManager.createQuery(" from Task");
         return query.getResultList();
     }
 

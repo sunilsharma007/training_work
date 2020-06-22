@@ -1,6 +1,6 @@
- <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
- <%@ include file="common/header.jspf"%>
+<%@ include file="common/header.jspf"%>
 <%@ include file="common/navigation.jspf"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html>

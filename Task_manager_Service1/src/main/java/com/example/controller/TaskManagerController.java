@@ -20,8 +20,8 @@ public class TaskManagerController {
         this.taskService = taskService;
     }
     @RequestMapping("/listTask")
-    public String listTodo(Model model) {
-        model.addAttribute("todo", taskService.getTasks());
+    public String listTask(Model model) {
+        model.addAttribute("task", taskService.getTasks());
         return "task-list";
 
     }
@@ -55,7 +55,7 @@ public class TaskManagerController {
     }
 
     @GetMapping("/showFormForUpdate")
-    public String showFormForUpdate(@RequestParam("todoId") int theId,
+    public String showFormForUpdate(@RequestParam("taskId") int theId,
                                     Model theModel) {
 
         Task theTasks = taskService.getTask(theId);
